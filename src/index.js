@@ -1,17 +1,19 @@
 import "babel-polyfill";
 import { registerHtml, start } from "tram-one"
 import ColorHeader from "./components/ColorHeader"
-import "./styles.css"
+import TetrabbleBoard from "./components/TetrabbleBoard"
+import "./styles.scss"
 
 const html = registerHtml({
-  ColorHeader
+  'color-header': ColorHeader,
+  'tetrabble-board': TetrabbleBoard
 })
 
 const home = () => {
   return html`
     <div>
-      <ColorHeader />
-      Thank you for using Tram-One!
+      <color-header />
+      <tetrabble-board />
     </div>
   `
 }

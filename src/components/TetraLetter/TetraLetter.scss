@@ -1,0 +1,12 @@
+@import '../../colors.scss';
+
+.TetraLetter {
+  background: $CYAN;
+  color: black;
+  border: none;
+  box-shadow: 0 2px 5px $BG inset;
+  &:focus {
+    background: $LIGHTCYAN;
+    outline: none;
+  }
+}

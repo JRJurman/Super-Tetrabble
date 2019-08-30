@@ -1,0 +1,6 @@
+.TetrabbleBoard {
+  display: grid;
+  /* 15 is the boardWidth */
+  grid-template: repeat(15, 2em) / repeat(15, 2em);
+  gap: 0.2em;
+}
