@@ -5,15 +5,15 @@ import TetrabbleBoard from "./components/TetrabbleBoard"
 import "./styles.scss"
 
 const html = registerHtml({
-  'color-header': ColorHeader,
-  'tetrabble-board': TetrabbleBoard
+  ColorHeader,
+  TetrabbleBoard
 })
 
 const home = () => {
   return html`
     <div>
-      <color-header />
-      <tetrabble-board />
+      <ColorHeader />
+      <TetrabbleBoard />
     </div>
   `
 }

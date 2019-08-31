@@ -1,6 +1,6 @@
 .TetrabbleBoard {
   display: grid;
-  /* 15 is the boardWidth */
-  grid-template: repeat(15, 2em) / repeat(15, 2em);
+  /* 12 is the boardWidth, if you want to change this, be sure to update boardWidth.js */
+  grid-template: repeat(12, 2em) / repeat(12, 2em);
   gap: 0.2em;
 }

@@ -4,12 +4,12 @@ import useBoardData from '../../hooks/useBoardData'
 import './TetrabbleBoard.scss'
 
 const html = registerHtml({
-  'tetra-letter': TetraLetter
+  TetraLetter
 })
 
 export default (props, children) => {
   const { board } = useBoardData()
-  const tetraLetters = board.map(() => html`<tetra-letter>i</tetra-letter>`)
+  const tetraLetters = board.map(({letter}) => html`<TetraLetter value=${letter} />`)
   return html`
     <div class="TetrabbleBoard">
       ${tetraLetters}

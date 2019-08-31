@@ -6,7 +6,7 @@ const html = registerHtml()
 export default (props, children) => {
   return html`
     <button class="TetraLetter">
-      i
+      ${props.value}
     </button>
   `
 }
